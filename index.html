@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Next Gen Dental Care is Mumbai's premier dental clinic providing personalized implants, laser dentistry, pediatric care, and teeth whitening in a modern, gentle environment.">
+  <meta name="keywords" content="Next Gen Dental Care, Mumbai Dental Clinic, Best Dentist Mumbai, Dental Implants, Laser Dentistry, Teeth Whitening">
+  <title>Next Gen Dental Care | Premium Clinic Mumbai</title>
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Modern SVG Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>
+    .logo-img{
+      height: 90px !important;
+      width: 120px !important;
+    }
+  </style>
+
+  <!-- Custom Custom Cursor Glow (Subtle premium effect) -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Header & Navigation Bar -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <img src="logo.jpg" alt="Next Gen Dental Care Logo" class="logo-img">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action CTA Button -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-nav">Book Appointment</a>
+        
+        <!-- Mobile Toggle Menu Button -->
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Custom Slide Transition Carousel -->
+  <section class="hero-section" id="home">
+    <div class="carousel-container" id="hero-carousel">
+      
+      <!-- Slide 1 -->
+      <div class="carousel-slide active" data-slide="1">
+        <div class="slide-bg-wrapper">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1920&q=80" alt="Next Gen Dental Care Clinic Interior" class="slide-bg-img">
+        </div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content-container">
+          <div class="slide-badge"><i data-lucide="star"></i> Mumbai's Leading Dental Practice</div>
+          <h1 class="slide-title">Next Gen <br><span class="text-gradient">Dental Care</span></h1>
+          <p class="slide-subtitle">Your smile, our priority. Providing clinical excellence with state-of-the-art diagnostics and a gentle patient journey.</p>
+          <div class="slide-actions">
+            <a href="#services" class="btn btn-primary">Our Services <i data-lucide="arrow-up-right"></i></a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-slide" data-slide="2">
+        <div class="slide-bg-wrapper">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1920&q=80" alt="Advanced Smile Restoration dentist smiling" class="slide-bg-img">
+        </div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content-container">
+          <div class="slide-badge"><i data-lucide="activity"></i> Advanced Smile Reconstruction</div>
+          <h1 class="slide-title">For A Lifetime <br><span class="text-gradient">Of Healthy Smiles</span></h1>
+          <p class="slide-subtitle">Restore confidence with precision implants, pain-free laser technology, and modern cosmetic redesigns.</p>
+          <div class="slide-actions">
+            <a href="#services" class="btn btn-primary">Explore Treatments <i data-lucide="arrow-up-right"></i></a>
+            <a href="#contact" class="btn btn-secondary">Schedule Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-slide" data-slide="3">
+        <div class="slide-bg-wrapper">
+          <img src="https://images.unsplash.com/photo-1579684389782-64d84b5e905d?auto=format&fit=crop&w=1920&q=80" alt="Advanced Dental Technology Laser Procedures" class="slide-bg-img">
+        </div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content-container">
+          <div class="slide-badge"><i data-lucide="sparkles"></i> Minimally Invasive Laser Dentistry</div>
+          <h1 class="slide-title">Pain-Free & <br><span class="text-gradient">Comfortable Care</span></h1>
+          <p class="slide-subtitle">Embrace the future of dentistry. Our laser-assisted treatment ensures zero drills, fast healing, and maximum comfort.</p>
+          <div class="slide-actions">
+            <a href="#about" class="btn btn-primary">Why Choose Us <i data-lucide="arrow-up-right"></i></a>
+            <a href="#contact" class="btn btn-secondary">Request Consultation</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Pagination Controls -->
+      <div class="carousel-controls">
+        <button class="carousel-arrow prev" id="carousel-prev" aria-label="Previous Slide">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <div class="carousel-dots" id="carousel-dots-container">
+          <span class="carousel-dot active" data-dot="1"></span>
+          <span class="carousel-dot" data-dot="2"></span>
+          <span class="carousel-dot" data-dot="3"></span>
+        </div>
+        <button class="carousel-arrow next" id="carousel-next" aria-label="Next Slide">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Section">
+        <span class="mouse-icon">
+          <span class="scroll-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="about-grid">
+        
+        <!-- Left Side Image Box -->
+        <div class="about-image-wrapper">
+          <div class="about-image-backdrop"></div>
+          <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80" alt="Dentist Consulting Patient at Next Gen Dental Care" class="about-main-img">
+            
+            <!-- Float Interactive Card -->
+            <div class="about-float-card card-glow-green">
+              <div class="card-float-icon">
+                <i data-lucide="heart-pulse"></i>
+              </div>
+              <div class="card-float-content">
+                <h4 class="float-title">100% Patient Focus</h4>
+                <p class="float-text">Tailored clinical protocols for anxiety-free treatments</p>
+              </div>
+            </div>
+            
+            <!-- Floating Achievement badge -->
+            <div class="about-badge-card">
+              <div class="badge-icon"><i data-lucide="award"></i></div>
+              <div class="badge-text-box">
+                <span class="badge-num">ISO</span>
+                <span class="badge-label">9001 Certified Clinic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side Content Box -->
+        <div class="about-content-wrapper">
+          <div class="section-header align-left">
+            <span class="section-subtitle-tag">About Next Gen Dental Care</span>
+            <h2 class="section-title-main">For A Lifetime Of <span class="text-gradient">Bright & Healthy</span> Smiles</h2>
+          </div>
+          
+          <p class="about-text-lead">
+            At Next Gen Dental Care, we are committed to providing the highest quality dental care in Mumbai. Our team of experienced and dedicated professionals uses the latest technology to ensure that every patient receives personalized and effective treatment.
+          </p>
+          
+          <p class="about-text-body">
+            We believe in creating a comfortable and welcoming environment for our patients, where they can feel confident and cared for. Your smile is our priority, and we strive to deliver exceptional results that go beyond expectations. Trust Next Gen Dental Care for a brighter, healthier smile.
+          </p>
+
+          <div class="about-features-row">
+            <div class="about-feature-item">
+              <div class="feature-icon-circle">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <div class="feature-info">
+                <h5>Sterile Protocols</h5>
+                <p>Grade-A infection control compliance</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-icon-circle">
+                <i data-lucide="smile"></i>
+              </div>
+              <div class="feature-info">
+                <h5>Smile Redesign</h5>
+                <p>Artistic planning using digital mockups</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-action-btn-row">
+            <a href="#contact" class="btn btn-primary">Book Consultation <i data-lucide="calendar"></i></a>
+            <div class="about-contact-micro">
+              <span class="micro-label">Quick Call</span>
+              <a href="tel:+919820677939" class="micro-number">+91 98206 77939</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Offerings Section (7 Animated Cards) -->
+  <section class="services-section" id="services">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle-tag">Our Business Offerings</span>
+        <h2 class="section-title-main">Transform Your Oral Health <br>With <span class="text-gradient">Next-Gen Solutions</span></h2>
+        <p class="section-header-desc">Whether you need family preventative checkups or advanced implant reconstruction, our team is equipped with the latest technology for comfortable, high-precision treatment.</p>
+      </div>
+
+      <div class="services-grid" id="services-grid-container">
+        
+        <!-- Card 1 - Dental Implants -->
+        <div class="service-card" data-tilt>
+          <div class="card-bg-glow"></div>
+          <div class="service-img-container">
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=600&q=80" alt="Dental Implants Procedure" class="service-img">
+            <div class="service-icon-floating">
+              <i data-lucide="wrench"></i>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Dental Implants</h3>
+            <p class="service-description">Restore your smile, bite functionality, and bone structure with our advanced, biologically compatible dental implant solutions.</p>
+            <div class="service-footer">
+              <a href="#contact" class="service-link">Consult Now <i data-lucide="chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 - Laser Dentistry -->
+        <div class="service-card" data-tilt>
+          <div class="card-bg-glow"></div>
+          <div class="service-img-container">
+            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80" alt="Laser Dentistry Equipment" class="service-img">
+            <div class="service-icon-floating">
+              <i data-lucide="zap"></i>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Laser Dentistry</h3>
+            <p class="service-description">Our state-of-the-art laser technology offers a minimally invasive alternative to traditional drills, enhancing patient comfort and precision.</p>
+            <div class="service-footer">
+              <a href="#contact" class="service-link">Consult Now <i data-lucide="chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 - Orthodontic Treatment -->
+        <div class="service-card" data-tilt>
+          <div class="card-bg-glow"></div>
+          <div class="service-img-container">
+            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=600&q=80" alt="Orthodontic braces and clear aligners" class="service-img">
+            <div class="service-icon-floating">
+              <i data-lucide="grid"></i>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Orthodontic Treatment</h3>
+            <p class="service-description">Achieve a perfectly straight, functional smile with our customized traditional braces and state-of-the-art clear alignment systems.</p>
+            <div class="service-footer">
+              <a href="#contact" class="service-link">Consult Now <i data-lucide="chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 - Teeth Whitening -->
+        <div class="service-card" data-tilt>
+          <div class="card-bg-glow"></div>
+          <div class="service-img-container">
+            <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=600&q=80" alt="Teeth Whitening Procedure" class="service-img">
+            <div class="service-icon-floating">
+              <i data-lucide="sparkles"></i>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Teeth Whitening</h3>
+            <p class="service-description">Brighten your smile in just one session. Our medical-grade whitening treatment safely eliminates deep organic stains.</p>
+            <div class="service-footer">
+              <a href="#contact" class="service-link">Consult Now <i data-lucide="chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 - Cosmetic Dentistry -->
+        <div class="service-card" data-tilt>
+          <div class="card-bg-glow"></div>
+          <div class="service-img-container">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" alt="Cosmetic Smile Makeover veneers" class="service-img">
+            <div class="service-icon-floating">
+              <i data-lucide="gem"></i>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Cosmetic Dentistry</h3>
+            <p class="service-description">Enhance your visual aesthetics. From porcelain veneers to full mouth rehabilitation, we craft smiles that empower your confidence.</p>
+            <div class="service-footer">
+              <a href="#contact" class="service-link">Consult Now <i data-lucide="chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 - Oral Hygiene Care -->
+        <div class="service-card" data-tilt>
+          <div class="card-bg-glow"></div>
+          <div class="service-img-container">
+            <img src="Oral-Hygiene-Care.jpg" alt="Oral Hygiene cleaning and therapy" class="service-img">
+            <div class="service-icon-floating">
+              <i data-lucide="shield"></i>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Oral Hygiene Care</h3>
+            <p class="service-description">Prevent decay and protect gum health. Enjoy routine professional scaling, root planing, and comprehensive oral cancer screening.</p>
+            <div class="service-footer">
+              <a href="#contact" class="service-link">Consult Now <i data-lucide="chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 - Pediatric Dentistry -->
+        <div class="service-card service-card-wide" data-tilt>
+          <div class="card-bg-glow"></div>
+          <div class="service-img-container">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" alt="Pediatric Dentistry happy child smiling" class="service-img">
+            <div class="service-icon-floating">
+              <i data-lucide="baby"></i>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Pediatric Dentistry</h3>
+            <p class="service-description">Gentle dental care specifically designed to keep your children's teeth healthy and setup excellent hygiene habits early on. Our team creates a playful, warm environment to combat dental anxiety completely.</p>
+            <div class="service-footer">
+              <a href="#contact" class="service-link">Consult Now <i data-lucide="chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Counter Statistics Section -->
+  <section class="counter-section">
+    <div class="section-container">
+      <div class="counter-grid">
+        
+        <!-- Counter 1 -->
+        <div class="counter-card scroll-reveal-counter">
+          <div class="counter-glow-effect"></div>
+          <div class="counter-icon-box"><i data-lucide="calendar-check"></i></div>
+          <div class="counter-number-wrapper">
+            <span class="counter-number" data-target="15">0</span><span class="counter-plus">+</span>
+          </div>
+          <p class="counter-text">Years of Dental Excellence</p>
+        </div>
+
+        <!-- Counter 2 -->
+        <div class="counter-card scroll-reveal-counter">
+          <div class="counter-glow-effect"></div>
+          <div class="counter-icon-box"><i data-lucide="laugh"></i></div>
+          <div class="counter-number-wrapper">
+            <span class="counter-number" data-target="12000">0</span><span class="counter-plus">+</span>
+          </div>
+          <p class="counter-text">Happy Smiles Cultivated</p>
+        </div>
+
+        <!-- Counter 3 -->
+        <div class="counter-card scroll-reveal-counter">
+          <div class="counter-glow-effect"></div>
+          <div class="counter-icon-box"><i data-lucide="shield-check"></i></div>
+          <div class="counter-number-wrapper">
+            <span class="counter-number" data-target="99" data-decimals="1">0</span><span class="counter-plus">%</span>
+          </div>
+          <p class="counter-text">Successful Procedures</p>
+        </div>
+
+        <!-- Counter 4 -->
+        <div class="counter-card scroll-reveal-counter">
+          <div class="counter-glow-effect"></div>
+          <div class="counter-icon-box"><i data-lucide="users"></i></div>
+          <div class="counter-number-wrapper">
+            <span class="counter-number" data-target="25">0</span><span class="counter-plus">+</span>
+          </div>
+          <p class="counter-text">Expert Dental Professionals</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Digital Consultation Section -->
+  <section class="digital-consultation-section" id="dc-section">
+    <div class="section-container">
+      <div class="consultation-grid">
+        
+        <!-- Left Side: Copy and Points -->
+        <div class="consultation-content">
+          <span class="section-subtitle-tag">The 3D Digital Consultation</span>
+          <h2 class="section-title-main">See Your Smile in 3D <br><span class="text-gradient">Before We Even Start.</span></h2>
+          
+          <div class="consultation-points">
+            <!-- Problem Point -->
+            <div class="consultation-point-card card-glow-green">
+              <div class="point-icon problem-icon">
+                <i data-lucide="alert-circle"></i>
+              </div>
+              <div class="point-text-box">
+                <h4 class="point-title">THE PROBLEM</h4>
+                <p class="point-text">Traditional dental molds are <strong>uncomfortable and prone to human error</strong> — leading to imprecise treatment and repeated visits.</p>
+              </div>
+            </div>
+            
+            <!-- Solution Point -->
+            <div class="consultation-point-card card-glow-green">
+              <div class="point-icon solution-icon">
+                <i data-lucide="maximize-2"></i>
+              </div>
+              <div class="point-text-box">
+                <h4 class="point-title">THE SOLUTION</h4>
+                <p class="point-text">Our <strong>Intraoral Scanner</strong> captures real-time 3D images of your teeth — no molds, no mess, no guesswork.</p>
+              </div>
+            </div>
+            
+            <!-- Benefit Point -->
+            <div class="consultation-point-card card-glow-green">
+              <div class="point-icon benefit-icon">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <div class="point-text-box">
+                <h4 class="point-title">THE BENEFIT</h4>
+                <p class="point-text">"We show you <strong>exactly what the problem is on a big screen</strong>, identifying potential dental issues early for a predictable, flawless result."</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="consultation-action-row">
+            <a href="#contact" class="btn btn-primary">
+              <i data-lucide="search"></i> Book an Appointment
+            </a>
+          </div>
+        </div>
+        
+        <!-- Right Side: 3D Model Interactive Frame -->
+        <div class="consultation-model-wrapper">
+          <div class="model-container card-glow-green">
+            <div class="model-view-area">
+              <iframe 
+                id="sketchfab-iframe"
+                title="Realistic Mouth"
+                frameborder="0" 
+                allowfullscreen 
+                mozallowfullscreen="true" 
+                webkitallowfullscreen="true" 
+                allow="autoplay; fullscreen; vr; xr-spatial-tracking; accelerometer; gyroscope; magnetometer" 
+                xr-spatial-tracking
+                loading="lazy"
+                src="https://sketchfab.com/models/70e3c64298484cb5a5a4bfc7f45f7990/embed?autostart=1&preload=1&transparent=1&dnt=1&camera=0&zoom=0.7&ui_loading=0&ui_watermark=0&ui_infos=0&ui_controls=0&ui_hint=0&ui_help=0&ui_settings=0&ui_vr=0&ui_ar=0"
+                style="position:absolute;top:-44px;left:-44px;width:calc(100% + 88px);height:calc(100% + 140px);border:none;opacity:1;">
+              </iframe>
+            </div>
+            <div class="model-instruction-capsule">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9l-3 3 3 3"/><path d="M9 5l3-3 3 3"/><path d="M15 19l-3 3-3-3"/><path d="M19 9l3 3-3 3"/><circle cx="12" cy="12" r="3"/></svg>
+              <span>Drag to explore · Scroll to zoom</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section (6 Points, Premium Animated Layout) -->
+  <section class="why-choose-section">
+    <div class="why-choose-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    
+    <div class="section-container">
+      <div class="why-choose-grid">
+        
+        <!-- Left Side Sticky Info Box -->
+        <div class="why-choose-sticky-info">
+          <span class="section-subtitle-tag">Why Choose Us</span>
+          <h2 class="section-title-main">Setting The Standards For <span class="text-gradient">Modern Dentistry</span></h2>
+          <p class="why-choose-desc">We combine technological precision with a patient-centric, empathetic ethos to deliver unmatched comfort and lifetime health results.</p>
+          
+          <!-- Special interactive tooth visualization element -->
+          <div class="interactive-tooth-box">
+            <div class="tooth-glowing-orbit">
+              <div class="orbiting-particle"></div>
+            </div>
+            <div class="tooth-graphic-container">
+              <i data-lucide="check-circle-2" class="tooth-heart-pulse"></i>
+              <div class="pulse-ring"></div>
+            </div>
+            <div class="tooth-info-bubble">
+              <span class="bubble-title">Modern Laser Equipped</span>
+              <span class="bubble-tag">Pain-Free Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side 6 points mouse glow cards grid -->
+        <div class="why-choose-points-grid">
+          
+          <!-- Point 1 -->
+          <div class="choose-glow-card">
+            <div class="card-inner-wrapper">
+              <div class="choose-icon-box">
+                <i data-lucide="stethoscope"></i>
+              </div>
+              <h4 class="choose-point-title">Panel of Specialists</h4>
+              <p class="choose-point-text">Our team consists of certified orthodontists, implantologists, and pediatric dentists coordinating care collectively.</p>
+            </div>
+          </div>
+
+          <!-- Point 2 -->
+          <div class="choose-glow-card">
+            <div class="card-inner-wrapper">
+              <div class="choose-icon-box">
+                <i data-lucide="cpu"></i>
+              </div>
+              <h4 class="choose-point-title">Next-Gen Laser Tech</h4>
+              <p class="choose-point-text">We deploy advanced clinical laser systems to perform bloodless, pain-free gum procedures and cavity preparations.</p>
+            </div>
+          </div>
+
+          <!-- Point 3 -->
+          <div class="choose-glow-card">
+            <div class="card-inner-wrapper">
+              <div class="choose-icon-box">
+                <i data-lucide="sparkles"></i>
+              </div>
+              <h4 class="choose-point-title">Gentle, Anxiety-Free Care</h4>
+              <p class="choose-point-text">We leverage micro-invasive approaches and comfort protocols to make dental anxiety a thing of the past.</p>
+            </div>
+          </div>
+
+          <!-- Point 4 -->
+          <div class="choose-glow-card">
+            <div class="card-inner-wrapper">
+              <div class="choose-icon-box">
+                <i data-lucide="user-check"></i>
+              </div>
+              <h4 class="choose-point-title">Tailored Patient Journey</h4>
+              <p class="choose-point-text">Every smile is unique. We co-create visual treatment roadmaps matching your distinct health aims and schedule.</p>
+            </div>
+          </div>
+
+          <!-- Point 5 -->
+          <div class="choose-glow-card">
+            <div class="card-inner-wrapper">
+              <div class="choose-icon-box">
+                <i data-lucide="ambulance"></i>
+              </div>
+              <h4 class="choose-point-title">Emergency Response</h4>
+              <p class="choose-point-text">Get rapid diagnostic triage and urgent pain relief interventions with our priority emergency response helpline.</p>
+            </div>
+          </div>
+
+          <!-- Point 6 -->
+          <div class="choose-glow-card">
+            <div class="card-inner-wrapper">
+              <div class="choose-icon-box">
+                <i data-lucide="shield-alert"></i>
+              </div>
+              <h4 class="choose-point-title">Zero-Compromise Safety</h4>
+              <p class="choose-point-text">We strictly execute class-leading medical autoclave sterilization cycles for absolute safety assurance.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Dummy Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle-tag">Patient Testimonials</span>
+        <h2 class="section-title-main">Stories of Restored <span class="text-gradient">Confidence</span></h2>
+      </div>
+
+      <div class="testimonials-carousel-wrapper">
+        <div class="testimonials-slider" id="testimonials-slider">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card active">
+            <div class="quote-icon-mark">“</div>
+            <div class="stars-row">
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+            </div>
+            <p class="testimonial-text">"The implant surgery at Next Gen Dental Care was absolutely seamless. I felt completely comfortable, and Dr. Gaurav's laser technology made the entire healing process pain-free. I couldn't be happier with my new smile!"</p>
+            <div class="patient-profile">
+              <div class="patient-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=80" alt="Patient Rajesh Sharma">
+              </div>
+              <div class="patient-info">
+                <h5 class="patient-name">Rajesh Sharma</h5>
+                <span class="patient-meta">Mumbai, Dental Implants Patient</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="quote-icon-mark">“</div>
+            <div class="stars-row">
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+            </div>
+            <p class="testimonial-text">"As someone with severe dental phobia, I dreaded dentist visits. The team at Next Gen changed that entirely. The gentle laser gum therapy was completely drill-free, and their friendly environment instantly calmed my nerves."</p>
+            <div class="patient-profile">
+              <div class="patient-avatar">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80" alt="Patient Priya Patel">
+              </div>
+              <div class="patient-info">
+                <h5 class="patient-name">Priya Patel</h5>
+                <span class="patient-meta">Andheri, Laser Dentistry Patient</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="quote-icon-mark">“</div>
+            <div class="stars-row">
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+              <i data-lucide="star" class="star-filled"></i>
+            </div>
+            <p class="testimonial-text">"My daughter actually enjoys going to the dentist now! The pediatric team is incredibly warm, explaining everything like a game. Her preventative sealants were done with zero fuss. Highly recommend Next Gen for families."</p>
+            <div class="patient-profile">
+              <div class="patient-avatar">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&h=120&q=80" alt="Patient Meera Deshmukh">
+              </div>
+              <div class="patient-info">
+                <h5 class="patient-name">Meera Deshmukh</h5>
+                <span class="patient-meta">Vile Parle, Mother of 6-year-old</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- Testimonials navigation triggers -->
+        <div class="testimonials-dots">
+          <span class="t-dot active" data-t-slide="0"></span>
+          <span class="t-dot" data-t-slide="1"></span>
+          <span class="t-dot" data-t-slide="2"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="faq-section" id="faq">
+    <div class="section-container">
+      <div class="faq-grid">
+        
+        <!-- Left Title Column -->
+        <div class="faq-header">
+          <span class="section-subtitle-tag">Got Questions?</span>
+          <h2 class="section-title-main">Frequently Asked <span class="text-gradient">Questions</span></h2>
+          <p class="faq-intro-text">Find answer keys to primary inquiries regarding treatment protocols, scheduling mechanics, insurance coverage, and dental laser tech comforts.</p>
+          <div class="faq-cta-box card-glow-green">
+            <h5>Still have questions?</h5>
+            <p>Our dental team is ready to answer specific health queries.</p>
+            <a href="#contact" class="btn btn-primary btn-sm">Ask Us Anything</a>
+          </div>
+        </div>
+
+        <!-- Right Accordion Column -->
+        <div class="faq-accordion-wrapper">
+          
+          <!-- FAQ Item 1 -->
+          <div class="faq-accordion-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">What exactly is laser dentistry, and is it safe?</span>
+              <span class="faq-icon-indicator"><i data-lucide="plus"></i></span>
+            </button>
+            <div class="faq-content-panel">
+              <div class="faq-panel-inner">
+                <p>Laser dentistry utilizes highly focused beams of light energy to treat hard or soft tissues in the mouth. It is extremely safe and approved by global dental associations. Our advanced laser systems minimize bleeding, reduce the need for anesthesia, and accelerate post-treatment healing significantly.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-accordion-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">How long does a dental implant procedure take?</span>
+              <span class="faq-icon-indicator"><i data-lucide="plus"></i></span>
+            </button>
+            <div class="faq-content-panel">
+              <div class="faq-panel-inner">
+                <p>The dental implant process is typically divided into two key phases. The surgical placement of the implant post takes about 1-2 hours. This is followed by a healing period of 3-6 months (osseointegration) during which the bone grows around the post. Finally, the custom prosthetic crown is secured, restoring full smile aesthetics.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-accordion-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Do clear aligners work as effectively as metal braces?</span>
+              <span class="faq-icon-indicator"><i data-lucide="plus"></i></span>
+            </button>
+            <div class="faq-content-panel">
+              <div class="faq-panel-inner">
+                <p>Yes, for the vast majority of orthodontic cases, clear aligners (like Invisalign) work just as effectively as traditional metal braces. They offer the added benefits of being virtually invisible, completely removable for meals, and much easier to clean, promoting superior hygiene throughout treatment.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-accordion-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">At what age should children have their first dental visit?</span>
+              <span class="faq-icon-indicator"><i data-lucide="plus"></i></span>
+            </button>
+            <div class="faq-content-panel">
+              <div class="faq-panel-inner">
+                <p>We recommend children visit a dentist when their first baby tooth emerges, or by their first birthday. Early checkups allow pediatric experts to screen development, outline preventative advice, and make the child comfortable in the dental chair early on.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-accordion-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">How can I book an appointment and what are your timings?</span>
+              <span class="faq-icon-indicator"><i data-lucide="plus"></i></span>
+            </button>
+            <div class="faq-content-panel">
+              <div class="faq-panel-inner">
+                <p>You can easily book an appointment by filling out the online booking form below, or calling us directly at +91 98206 77939. We are open Monday through Saturday from 10:30 AM to 9:00 PM, and on Sundays from 10:00 AM to 2:00 PM for scheduled procedures and emergency consultations.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section (Form, Details & Hours) -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <div class="contact-grid-layout">
+        
+        <!-- Form Card Column -->
+        <div class="contact-form-column">
+          <div class="form-container-card card-glow-green">
+            <div class="form-header">
+              <h3>Book Your Appointment</h3>
+              <p>Fill out the fields below to request an appointment. Our coordinator will contact you to finalize the date and slot.</p>
+            </div>
+            
+            <form id="appointment-booking-form" class="booking-form" novalidate>
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="booking-name">Full Name <span class="required">*</span></label>
+                  <input type="text" id="booking-name" placeholder="John Doe" required>
+                  <span class="error-msg">Please enter your name</span>
+                </div>
+                <div class="form-group">
+                  <label for="booking-phone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="booking-phone" placeholder="98XXXXXXXX" required>
+                  <span class="error-msg">Please enter a valid phone number</span>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="booking-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="booking-email" placeholder="john@example.com" required>
+                <span class="error-msg">Please enter a valid email address</span>
+              </div>
+              
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="booking-service">Preferred Treatment <span class="required">*</span></label>
+                  <select id="booking-service" required>
+                    <option value="" disabled selected>Select service</option>
+                    <option value="implants">Dental Implants</option>
+                    <option value="laser">Laser Dentistry</option>
+                    <option value="ortho">Orthodontics</option>
+                    <option value="whitening">Teeth Whitening</option>
+                    <option value="cosmetic">Cosmetic Dentistry</option>
+                    <option value="hygiene">Oral Hygiene Care</option>
+                    <option value="pediatric">Pediatric Care</option>
+                  </select>
+                  <span class="error-msg">Please select a service</span>
+                </div>
+                <div class="form-group">
+                  <label for="booking-date">Preferred Date</label>
+                  <input type="date" id="booking-date">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="booking-notes">Additional Message</label>
+                <textarea id="booking-notes" placeholder="Please describe any issues or requirements..." rows="3"></textarea>
+              </div>
+
+              <div class="form-consent">
+                <input type="checkbox" id="booking-consent" required>
+                <label for="booking-consent">I allow Next Gen Dental Care to store my submission to respond to my inquiry. <span class="required">*</span></label>
+                <span class="error-msg consent-error">Consent is required to submit the form</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="booking-submit-btn">
+                <span class="btn-text">Submit Request</span>
+                <span class="btn-spinner"></span>
+              </button>
+            </form>
+
+            <div class="form-status-msg success" id="form-success-msg">
+              <i data-lucide="check-circle-2"></i>
+              <div class="status-content">
+                <h4>Submission Successful!</h4>
+                <p>We have received your appointment request. Our clinical coordinator will call you back shortly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location, Hours & Info Column -->
+        <div class="contact-info-column">
+          
+          <!-- Timings Table Card -->
+          <div class="info-card-block hover-lift">
+            <h4 class="info-block-title"><i data-lucide="clock"></i> Operational Timings</h4>
+            <div class="hours-table">
+              <div class="hours-row">
+                <span class="day-label">Monday – Saturday</span>
+                <span class="time-label">10:30 AM – 9:00 PM</span>
+              </div>
+              <div class="hours-row highlight-row">
+                <span class="day-label">Sunday</span>
+                <span class="time-label">10:00 AM – 2:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Channels Card -->
+          <div class="info-card-block hover-lift">
+            <h4 class="info-block-title"><i data-lucide="phone-call"></i> Get in Touch</h4>
+            <div class="contact-links-list">
+              <a href="tel:+919820677939" class="contact-channel-link">
+                <div class="channel-icon"><i data-lucide="phone"></i></div>
+                <div class="channel-detail">
+                  <span class="channel-title">Phone Call</span>
+                  <span class="channel-value">+91 98206 77939</span>
+                </div>
+              </a>
+              <a href="mailto:nextgendentalcarevp@gmail.com" class="contact-channel-link">
+                <div class="channel-icon"><i data-lucide="mail"></i></div>
+                <div class="channel-detail">
+                  <span class="channel-title">Email Address</span>
+                  <span class="channel-value text-break">nextgendentalcarevp@gmail.com</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Clinic Location Card -->
+          <div class="info-card-block hover-lift">
+            <h4 class="info-block-title"><i data-lucide="map-pin"></i> Clinic Location</h4>
+            <p class="location-text">
+              Ketayun Mansion, Shop No.7 Ground Floor, Shahji Raje Marg, Vile Parle East, Mumbai, MH 400057 IN
+            </p>
+            <a href="https://www.google.com/maps/place/Ketayun+Mansion,+Shop+No.7+Ground+Floor+Mumbai+MH+400057+IN" target="_blank" rel="noopener noreferrer" class="map-preview-box">
+              <!-- Overlay Glow Map Placeholder with address indicators -->
+              <div class="map-overlay-content">
+                <i data-lucide="map"></i>
+                <span>Open Google Maps</span>
+              </div>
+              <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=50" alt="Map View of Vile Parle, Mumbai" class="map-static-img">
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Creative Animated Footer -->
+  <footer class="footer-block">
+    <div class="footer-bg-glow"></div>
+    
+    <div class="section-container">
+      <div class="footer-main-grid">
+        
+        <!-- Branding & Social Column -->
+        <div class="footer-brand-column">
+          <a href="#home" class="footer-logo">
+            <img src="logo.jpg" alt="Next Gen Dental Care Logo" class="logo-img">
+          </a>
+          <p class="footer-tagline">Mumbai's premier clinic restoring confidence, one healthy smile at a time.</p>
+          
+          <!-- Social Link Icons -->
+          <div class="footer-social-row">
+            <a href="https://www.instagram.com/nextgen_dentalcare?igsh=OTl3OWUwa28xbTdk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z"/><polygon points="9.7 15 15.6 12 9.7 9 9.7 15"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Linkedin">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Links Column -->
+        <div class="footer-nav-column">
+          <h5 class="footer-title">Quick Navigation</h5>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#services" class="footer-link">Dental Offerings</a></li>
+            <li><a href="#faq" class="footer-link">FAQ Accordion</a></li>
+            <li><a href="#contact" class="footer-link">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <!-- Offerings Shortcuts Column -->
+        <div class="footer-nav-column">
+          <h5 class="footer-title">Featured Treatments</h5>
+          <ul class="footer-links-list">
+            <li><a href="#services" class="footer-link">Titanium Implants</a></li>
+            <li><a href="#services" class="footer-link">Painless Lasers</a></li>
+            <li><a href="#services" class="footer-link">Clear Aligners</a></li>
+            <li><a href="#services" class="footer-link">Teeth Whitening</a></li>
+            <li><a href="#services" class="footer-link">Pediatric Checkups</a></li>
+          </ul>
+        </div>
+
+        <!-- Emergency/Info Column -->
+        <div class="footer-nav-column">
+          <h5 class="footer-title">Clinic Access</h5>
+          <div class="footer-info-details">
+            <p class="footer-detail-item">
+              <i data-lucide="map-pin"></i>
+              <span>Vile Parle East, Mumbai, 400057</span>
+            </p>
+            <p class="footer-detail-item">
+              <i data-lucide="phone"></i>
+              <a href="tel:+919820677939">+91 98206 77939</a>
+            </p>
+            <div class="emergency-badge">
+              <div class="badge-pulse"></div>
+              <span>24/7 Dental Emergency Response Available</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">&copy; 2026 Next Gen Dental Care. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#" class="footer-link-sub">Privacy Policy</a>
+          <a href="#" class="footer-link-sub">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

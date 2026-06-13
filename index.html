@@ -21,9 +21,21 @@
 <body>
   <style>
     .logo-img{
-      height: 90px !important;
-      width: 120px !important;
+      height: 60px !important;
+      width: 60px !important;
     }
+
+     .x-logo {
+    margin-right: 0 !important;
+  }
+
+  @media (max-width: 768px) {
+  .x-logo {
+    margin-right: 0 !important;
+    /* width: auto !important; */
+  }
+}
+    
   </style>
 
   <!-- Custom Custom Cursor Glow (Subtle premium effect) -->
@@ -32,8 +44,8 @@
   <!-- Header & Navigation Bar -->
   <header class="navbar-header" id="navbar">
     <div class="nav-container">
-      <a href="#home" class="nav-logo" id="nav-logo-link">
-        <img src="new-logo.png" alt="Next Gen Dental Care Logo" class="logo-img" style="padding: 5px 0;">
+      <a href="#home" class="nav-logo x-logo" id="nav-logo-link" >
+        <img src="new-logo.png" alt="Next Gen Dental Care Logo" class="logo-img " style="padding: 5px 0;">
       </a>
 
       <!-- Desktop Nav Links -->

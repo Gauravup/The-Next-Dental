@@ -427,7 +427,11 @@
 
   <!-- 3D Digital Consultation Section -->
   <section class="digital-consultation-section" id="dc-section">
-    <div class="section-container">
+    <div class="consultation-bg-glows">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="section-container" style="position: relative; z-index: 2;">
       <div class="consultation-grid">
         
         <!-- Left Side: Copy and Points -->
@@ -507,111 +511,106 @@
   </section>
 
   <!-- Why Choose Us Section (6 Points, Premium Animated Layout) -->
-  <section class="why-choose-section">
+  <!-- Why Choose Us Section (New Premium Layout) -->
+  <section class="why-choose-section" id="why-choose">
     <div class="why-choose-bg-shapes">
       <div class="shape shape-1"></div>
       <div class="shape shape-2"></div>
     </div>
     
-    <div class="section-container">
+    <div class="section-container" style="position: relative; z-index: 2;">
+      <!-- Centered Header -->
+      <div class="section-header">
+        <span class="section-subtitle-tag">Why Choose Us</span>
+        <h2 class="section-title-main">Setting The Standards For <span class="text-gradient">Modern Dentistry</span></h2>
+        <p class="section-header-desc">We combine technological precision with a patient-centric, empathetic ethos to deliver unmatched comfort and lifetime health results.</p>
+      </div>
+      
       <div class="why-choose-grid">
-        
-        <!-- Left Side Sticky Info Box -->
-        <div class="why-choose-sticky-info">
-          <span class="section-subtitle-tag">Why Choose Us</span>
-          <h2 class="section-title-main">Setting The Standards For <span class="text-gradient">Modern Dentistry</span></h2>
-          <p class="why-choose-desc">We combine technological precision with a patient-centric, empathetic ethos to deliver unmatched comfort and lifetime health results.</p>
-          
-          <!-- Special interactive tooth visualization element -->
-          <div class="interactive-tooth-box">
-            <div class="tooth-glowing-orbit">
-              <div class="orbiting-particle"></div>
-            </div>
-            <div class="tooth-graphic-container">
-              <i data-lucide="check-circle-2" class="tooth-heart-pulse"></i>
-              <div class="pulse-ring"></div>
-            </div>
-            <div class="tooth-info-bubble">
-              <span class="bubble-title">Modern Laser Equipped</span>
-              <span class="bubble-tag">Pain-Free Tech</span>
-            </div>
+        <!-- Card 1 -->
+        <div class="choose-glow-card">
+          <span class="choose-num">01</span>
+          <div class="choose-icon-box">
+            <i data-lucide="stethoscope"></i>
           </div>
+          <h4 class="choose-point-title">Panel of Specialists</h4>
+          <p class="choose-point-text">Our team consists of certified orthodontists, implantologists, and pediatric dentists coordinating care collectively.</p>
         </div>
 
-        <!-- Right Side 6 points mouse glow cards grid -->
-        <div class="why-choose-points-grid">
-          
-          <!-- Point 1 -->
-          <div class="choose-glow-card">
-            <div class="card-inner-wrapper">
-              <div class="choose-icon-box">
-                <i data-lucide="stethoscope"></i>
+        <!-- Card 2 -->
+        <div class="choose-glow-card">
+          <span class="choose-num">02</span>
+          <div class="choose-icon-box">
+            <i data-lucide="cpu"></i>
+          </div>
+          <h4 class="choose-point-title">Next-Gen Laser Tech</h4>
+          <p class="choose-point-text">We deploy advanced clinical laser systems to perform bloodless, pain-free gum procedures and cavity preparations.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="choose-glow-card">
+          <span class="choose-num">03</span>
+          <div class="choose-icon-box">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h4 class="choose-point-title">Gentle, Anxiety-Free</h4>
+          <p class="choose-point-text">We leverage micro-invasive approaches and comfort protocols to make dental anxiety a thing of the past.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="choose-glow-card">
+          <span class="choose-num">04</span>
+          <div class="choose-icon-box">
+            <i data-lucide="user-check"></i>
+          </div>
+          <h4 class="choose-point-title">Tailored Patient Journey</h4>
+          <p class="choose-point-text">Every smile is unique. We co-create visual treatment roadmaps matching your distinct health aims and schedule.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="choose-glow-card">
+          <span class="choose-num">05</span>
+          <div class="choose-icon-box">
+            <i data-lucide="ambulance"></i>
+          </div>
+          <h4 class="choose-point-title">Emergency Response</h4>
+          <p class="choose-point-text">Get urgent pain relief interventions with our priority emergency response helpline.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="choose-glow-card">
+          <span class="choose-num">06</span>
+          <div class="choose-icon-box">
+            <i data-lucide="shield-alert"></i>
+          </div>
+          <h4 class="choose-point-title">Zero-Compromise Safety</h4>
+          <p class="choose-point-text">We strictly execute class-leading medical autoclave sterilization cycles for absolute safety assurance.</p>
+        </div>
+
+        <!-- Row 3: Wide Callout Card -->
+        <div class="choose-callout-card card-glow-green">
+          <div class="callout-interactive-side">
+            <!-- Special interactive tooth visualization element -->
+            <div class="interactive-tooth-box">
+              <div class="tooth-glowing-orbit">
+                <div class="orbiting-particle"></div>
               </div>
-              <h4 class="choose-point-title">Panel of Specialists</h4>
-              <p class="choose-point-text">Our team consists of certified orthodontists, implantologists, and pediatric dentists coordinating care collectively.</p>
+              <div class="tooth-graphic-container">
+                <i data-lucide="check-circle-2" class="tooth-heart-pulse"></i>
+                <div class="pulse-ring"></div>
+              </div>
             </div>
           </div>
-
-          <!-- Point 2 -->
-          <div class="choose-glow-card">
-            <div class="card-inner-wrapper">
-              <div class="choose-icon-box">
-                <i data-lucide="cpu"></i>
-              </div>
-              <h4 class="choose-point-title">Next-Gen Laser Tech</h4>
-              <p class="choose-point-text">We deploy advanced clinical laser systems to perform bloodless, pain-free gum procedures and cavity preparations.</p>
-            </div>
+          <div class="callout-text-side">
+            <h3 class="callout-title">Ready for modern, pain-free dental care?</h3>
+            <p class="callout-description">Schedule a digital consultation session and see your smile in 3D before treatments even begin.</p>
+            <a href="#contact" class="btn btn-primary">Schedule Appointment <i data-lucide="calendar"></i></a>
           </div>
-
-          <!-- Point 3 -->
-          <div class="choose-glow-card">
-            <div class="card-inner-wrapper">
-              <div class="choose-icon-box">
-                <i data-lucide="sparkles"></i>
-              </div>
-              <h4 class="choose-point-title">Gentle, Anxiety-Free Care</h4>
-              <p class="choose-point-text">We leverage micro-invasive approaches and comfort protocols to make dental anxiety a thing of the past.</p>
-            </div>
-          </div>
-
-          <!-- Point 4 -->
-          <div class="choose-glow-card">
-            <div class="card-inner-wrapper">
-              <div class="choose-icon-box">
-                <i data-lucide="user-check"></i>
-              </div>
-              <h4 class="choose-point-title">Tailored Patient Journey</h4>
-              <p class="choose-point-text">Every smile is unique. We co-create visual treatment roadmaps matching your distinct health aims and schedule.</p>
-            </div>
-          </div>
-
-          <!-- Point 5 -->
-          <div class="choose-glow-card">
-            <div class="card-inner-wrapper">
-              <div class="choose-icon-box">
-                <i data-lucide="ambulance"></i>
-              </div>
-              <h4 class="choose-point-title">Emergency Response</h4>
-              <p class="choose-point-text">Get rapid diagnostic triage and urgent pain relief interventions with our priority emergency response helpline.</p>
-            </div>
-          </div>
-
-          <!-- Point 6 -->
-          <div class="choose-glow-card">
-            <div class="card-inner-wrapper">
-              <div class="choose-icon-box">
-                <i data-lucide="shield-alert"></i>
-              </div>
-              <h4 class="choose-point-title">Zero-Compromise Safety</h4>
-              <p class="choose-point-text">We strictly execute class-leading medical autoclave sterilization cycles for absolute safety assurance.</p>
-            </div>
-          </div>
-
         </div>
 
       </div>
     </div>
-  </section>
+
 
   <!-- Dummy Testimonials Section -->
   <section class="testimonials-section">
@@ -1014,6 +1013,7 @@
       <!-- Footer Bottom Bar -->
       <div class="footer-bottom-bar">
         <p class="footer-copyright">&copy; 2026 Next Gen Dental Care. All Rights Reserved.</p>
+        <p class="footer-credits" style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.7);">Designed and developed by <a href="https://digigoatindia.com/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-green); font-weight: 600; transition: color 0.3s ease;">Digigoat India</a></p>
         <div class="footer-legal-links">
           <a href="#" class="footer-link-sub">Privacy Policy</a>
           <a href="#" class="footer-link-sub">Terms of Service</a>
